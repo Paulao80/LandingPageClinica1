@@ -1,7 +1,8 @@
 {
-  "name": "my-project",
+  "name": "clinica-serena-landing",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "packageManager": "yarn@4.18.1",
   "scripts": {
     "dev": "next dev",

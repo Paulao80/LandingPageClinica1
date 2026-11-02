@@ -4,6 +4,8 @@ Landing page institucional da **Clínica Serena**, com foco em apresentação de
 
 **Site publicado:** [https://clinicaserena.netlify.app](https://clinicaserena.netlify.app)
 
+> **Repositório público.** Projeto de portfólio / demonstração: textos, nomes, CRMs, telefones, endereços e e-mails são fictícios e não representam uma clínica real. A marca visual foi criada para fins de estudo e apresentação de UI.
+
 ## Stack
 
 - [Next.js 16](https://nextjs.org/) (App Router)
@@ -100,4 +102,8 @@ O projeto também é compatível com [Vercel](https://vercel.com/) e outras plat
 
 ## Licença
 
-Projeto privado (`"private": true` no `package.json`).
+Código aberto sob [MIT](LICENSE).
+
+O campo `"private": true` no `package.json` apenas evita publicação acidental no npm; o repositório Git é **público**.
+
+Imagens em `public/images/` (fotos, logos) são parte do material de demonstração — reutilize o código, mas substitua os assets se for um projeto comercial.
