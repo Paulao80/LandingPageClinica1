@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="bg-foreground py-12 text-background">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-5 md:flex-row md:items-start md:justify-between">
         <div className="flex flex-col items-start gap-3">
-          <Logo inverted />
+          <Logo variant="light" />
           <p className="max-w-xs text-sm leading-relaxed text-background/70">
             Responsável técnica: Dra. Helena Duarte, CRM-SP 112.345.
           </p>

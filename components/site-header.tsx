@@ -20,7 +20,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-[4.75rem] max-w-6xl items-center justify-between px-5 sm:h-20">
         <a href="#" aria-label="Clínica Serena, início">
-          <Logo />
+          <Logo variant="dark" />
         </a>
 
         <nav aria-label="Principal" className="hidden md:block">

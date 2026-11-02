@@ -73,7 +73,22 @@ lib/
 
 ## Logo
 
-A marca usa `public/images/logo-serena.png`, exibida pelo componente `components/logo.tsx` no header e no footer.
+A marca usa duas variantes em `public/images/`:
+
+- `logo-serena-dark.png` — header (fundo claro)
+- `logo-serena-light.png` — footer (fundo escuro)
+
+O componente `components/logo.tsx` recebe `variant="dark"` ou `variant="light"`.
+
+### Favicon e app icon
+
+| Arquivo | Uso |
+| ------- | --- |
+| `icon-light-32x32.png` | Favicon em tema claro |
+| `icon-dark-32x32.png` | Favicon em tema escuro |
+| `icon.svg` | Favicon vetorial (180×180, baseado na versão light) |
+| `apple-icon.png` | Ícone Apple (180×180, versão light) |
+| `icon-light-180.png` / `icon-dark-180.png` | Masters em 180×180 |
 
 ## Deploy
 

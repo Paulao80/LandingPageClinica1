@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   title: 'Clínica Serena | Cuidado médico próximo e humano',
   description:
     'Clínica multidisciplinar com clínica geral, cardiologia, pediatria, dermatologia, ortopedia e psicologia. Agende sua consulta online.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {

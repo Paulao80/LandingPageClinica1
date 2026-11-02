@@ -1,16 +1,37 @@
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
-export function Logo({ className }: { className?: string; inverted?: boolean }) {
+const logos = {
+  dark: {
+    src: '/images/logo-serena-dark.png',
+    width: 410,
+    height: 207,
+  },
+  light: {
+    src: '/images/logo-serena-light.png',
+    width: 408,
+    height: 204,
+  },
+} as const
+
+export function Logo({
+  className,
+  variant = 'dark',
+}: {
+  className?: string
+  variant?: keyof typeof logos
+}) {
+  const asset = logos[variant]
+
   return (
     <span className={cn('inline-block w-fit max-w-full', className)}>
       <Image
-        src="/images/logo-serena.png"
+        src={asset.src}
         alt="Serena Clínica"
-        width={410}
-        height={207}
+        width={asset.width}
+        height={asset.height}
         className="block h-14 w-auto max-w-none object-contain sm:h-16"
-        priority
+        priority={variant === 'dark'}
       />
     </span>
   )
