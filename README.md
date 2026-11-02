@@ -2,6 +2,8 @@
 
 Landing page institucional da **Clínica Serena**, com foco em apresentação de serviços, equipe, depoimentos e agendamento de consultas.
 
+**Site publicado:** [https://clinicaserena.netlify.app](https://clinicaserena.netlify.app)
+
 ## Stack
 
 - [Next.js 16](https://nextjs.org/) (App Router)
@@ -92,7 +94,9 @@ O componente `components/logo.tsx` recebe `variant="dark"` ou `variant="light"`.
 
 ## Deploy
 
-O projeto é compatível com [Vercel](https://vercel.com/) e plataformas que suportam Next.js. Após o deploy, o analytics é carregado automaticamente quando `NODE_ENV === 'production'`.
+Produção: [https://clinicaserena.netlify.app](https://clinicaserena.netlify.app) ([Netlify](https://www.netlify.com/)).
+
+O projeto também é compatível com [Vercel](https://vercel.com/) e outras plataformas que suportam Next.js. Após o deploy, o analytics é carregado automaticamente quando `NODE_ENV === 'production'`.
 
 ## Licença
 
