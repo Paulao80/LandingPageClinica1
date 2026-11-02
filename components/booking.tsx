@@ -2,6 +2,7 @@
 
 import type { FormEvent } from 'react'
 import { Clock, MapPin, Phone } from 'lucide-react'
+import { Reveal } from '@/components/reveal'
 import { Button } from '@/components/ui/button'
 
 const WHATSAPP_NUMBER = '5511999990000'
@@ -28,7 +29,7 @@ export function Booking() {
   return (
     <section id="agendar" className="scroll-mt-20 bg-secondary py-20 md:py-28">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-2 md:gap-16">
-        <div className="flex flex-col gap-8">
+        <Reveal className="flex flex-col gap-8" variant="fade-right">
           <div className="flex flex-col gap-4">
             <p className="text-sm font-medium tracking-wide text-primary uppercase">Agendamento</p>
             <h2 className="font-serif text-3xl leading-tight font-medium tracking-tight text-balance md:text-5xl">
@@ -63,9 +64,10 @@ export function Booking() {
               </a>
             </li>
           </ul>
-        </div>
+        </Reveal>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-5 rounded-3xl bg-card p-6 md:p-8">
+        <Reveal variant="fade-left" delay={100}>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5 rounded-3xl bg-card p-6 md:p-8">
           <div className="flex flex-col gap-2">
             <label htmlFor="nome" className="text-sm font-medium">
               Nome completo
@@ -122,7 +124,8 @@ export function Booking() {
           <p className="text-center text-xs leading-relaxed text-muted-foreground">
             Você será direcionado ao WhatsApp da recepção.
           </p>
-        </form>
+          </form>
+        </Reveal>
       </div>
     </section>
   )

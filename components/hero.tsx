@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import { ArrowRight, CalendarCheck, ShieldCheck } from 'lucide-react'
+import { Reveal } from '@/components/reveal'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
 export function Hero() {
   return (
     <section className="mx-auto grid max-w-6xl gap-12 px-5 pt-12 pb-20 md:grid-cols-12 md:items-center md:pt-20 md:pb-28">
-      <div className="flex flex-col gap-7 md:col-span-6">
+      <Reveal className="flex flex-col gap-7 md:col-span-6" variant="fade-up">
         <p className="inline-flex w-fit items-center gap-2 rounded-full bg-secondary px-3 py-1 text-sm text-secondary-foreground">
           <ShieldCheck className="size-4 text-primary" aria-hidden="true" />
           Atendimento particular e principais convênios
@@ -31,9 +32,9 @@ export function Hero() {
             Ver especialidades
           </a>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="relative md:col-span-6">
+      <Reveal className="relative md:col-span-6" variant="fade-up" delay={120}>
         <div className="relative aspect-[4/5] overflow-hidden rounded-3xl md:aspect-[5/6]">
           <Image
             src="/images/hero.png"
@@ -53,7 +54,7 @@ export function Hero() {
             <span className="font-medium text-card-foreground">Hoje, às 16h30</span>
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   )
 }
